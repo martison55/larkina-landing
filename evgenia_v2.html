@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Евгения Ларкина — юрист по праву РФ, Китая и Таиланда. Трансграничные платежи</title>
+<meta name="description" content="Премиальное юридическое сопровождение бизнеса: право РФ, Китай и Таиланд, трансграничные платежи и ВЭД. Экспертное решение задач без рисков." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink:    '#0d0d0f',   /* почти чёрный графит */
+          coal:   '#161619',   /* панели */
+          ash:    '#9a9aa0',   /* приглушённый текст */
+          sand:   '#e9e2d6',   /* тёплый беж */
+          accent: '#c4a86a',   /* приглушённое золото — единственный акцент */
+          line:   'rgba(233,226,214,0.10)',
+        },
+        fontFamily: {
+          display: ['Unbounded', 'sans-serif'],
+          body:    ['Manrope', 'sans-serif'],
+        },
+        letterSpacing: { tightest: '-0.04em' },
+      },
+    },
+  };
+</script>
+
+<style>
+  html, body { background:#0d0d0f; color:#e9e2d6; font-family:'Manrope',sans-serif; }
+  ::selection { background:#c4a86a; color:#0d0d0f; }
+  .grain::before{
+    content:""; position:fixed; inset:0; pointer-events:none; z-index:60; opacity:.035;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .h-display{ font-family:'Unbounded',sans-serif; letter-spacing:-0.04em; line-height:1.02; }
+  .hairline{ border-top:1px solid rgba(233,226,214,0.10); }
+  .reveal{ opacity:1; } /* first-paint-safe: контент виден по умолчанию */
+  @media (prefers-reduced-motion: reduce){
+    *{ animation:none !important; transition:none !important; }
+    .reveal{ opacity:1 !important; transform:none !important; }
+  }
+  /* мягкая виньетка под hero */
+  .hero-mask{ background:linear-gradient(180deg, rgba(13,13,15,.35) 0%, rgba(13,13,15,.55) 45%, rgba(13,13,15,.92) 100%); }
+</style>
+</head>
+
+<body class="grain antialiased overflow-x-hidden">
+
+<!-- ░░ NAV ░░ -->
+<header id="nav" class="fixed top-0 inset-x-0 z-50 transition-all duration-500">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+    <a href="#top" class="h-display text-lg font-medium tracking-tightest">Е.&nbsp;Ларкина<span class="text-accent">.</span></a>
+    <nav class="hidden md:flex items-center gap-9 text-sm text-ash">
+      <a href="#services" class="hover:text-sand transition-colors">Услуги</a>
+      <a href="#cases" class="hover:text-sand transition-colors">Кейсы</a>
+      <a href="#about" class="hover:text-sand transition-colors">Обо&nbsp;мне</a>
+      <a href="#faq" class="hover:text-sand transition-colors">FAQ</a>
+    </nav>
+    <a href="#contact" class="text-sm border border-line hover:border-accent hover:text-accent rounded-full px-5 py-2.5 transition-all">Оставить заявку</a>
+  </div>
+</header>
+
+<!-- ░░ HERO ░░ -->
+<section id="top" class="relative min-h-screen flex items-center">
+  <div class="absolute inset-0">
+    <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=2400&auto=format&fit=crop"
+         alt="" class="w-full h-full object-cover object-center opacity-70" />
+    <div class="absolute inset-0 hero-mask"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-6 lg:px-10 w-full pt-32 pb-24">
+    <p data-reveal class="reveal text-accent text-sm tracking-[0.25em] uppercase mb-7">Право РФ · Китай · Таиланд</p>
+    <h1 data-reveal class="reveal h-display text-4xl sm:text-6xl lg:text-7xl max-w-4xl font-medium">
+      Юридическая защита бизнеса <span class="text-accent">без границ</span> и без рисков
+    </h1>
+    <p data-reveal class="reveal mt-8 max-w-xl text-lg text-ash leading-relaxed">
+      Сопровождаю компании и предпринимателей, работающих с Азией: структурирую сделки,
+      выстраиваю трансграничные платежи и закрываю правовые риски ВЭД — по российскому
+      и азиатскому праву.
+    </p>
+    <div data-reveal class="reveal mt-11 flex flex-col sm:flex-row gap-4">
+      <a href="#contact" class="group inline-flex items-center justify-center gap-2 bg-accent text-ink font-semibold rounded-full px-8 py-4 hover:bg-sand transition-all">
+        Обсудить задачу
+        <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a href="#services" class="inline-flex items-center justify-center gap-2 border border-line hover:border-sand rounded-full px-8 py-4 text-sand transition-all">
+        Направления работы
+      </a>
+    </div>
+  </div>
+
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-ash text-xs tracking-[0.2em] uppercase animate-pulse">Листайте вниз</div>
+</section>
+
+<!-- ░░ TRUST / ЦИФРЫ ░░ -->
+<section id="trust" class="relative bg-ink py-24 lg:py-32">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <p data-reveal class="reveal text-center text-ash text-sm tracking-[0.2em] uppercase mb-16">Опора для бизнеса, который работает на двух рынках</p>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-px bg-line rounded-2xl overflow-hidden">
+      <div data-reveal class="reveal bg-ink p-10 text-center">
+        <div class="h-display text-4xl lg:text-5xl text-sand"><span data-count="10" data-suffix="+">10+</span></div>
+        <p class="mt-3 text-sm text-ash">лет в трансграничном праве</p>
+      </div>
+      <div data-reveal class="reveal bg-ink p-10 text-center">
+        <div class="h-display text-4xl lg:text-5xl text-sand"><span data-count="200" data-suffix="+">200+</span></div>
+        <p class="mt-3 text-sm text-ash">сопровождённых сделок и компаний</p>
+      </div>
+      <div data-reveal class="reveal bg-ink p-10 text-center">
+        <div class="h-display text-4xl lg:text-5xl text-sand"><span data-count="3">3</span></div>
+        <p class="mt-3 text-sm text-ash">юрисдикции: РФ, Китай, Таиланд</p>
+      </div>
+      <div data-reveal class="reveal bg-ink p-10 text-center">
+        <div class="h-display text-4xl lg:text-5xl text-accent"><span data-count="100" data-suffix="%">100%</span></div>
+        <p class="mt-3 text-sm text-ash">конфиденциальность и сопровождение «под ключ»</p>
+      </div>
+    </div>
+    <p data-reveal class="reveal mt-8 text-center text-xs text-ash/70">Цифры приведены как ориентир и уточняются по согласованию.</p>
+  </div>
+</section>
+
+<!-- ░░ УСЛУГИ ░░ -->
+<section id="services" class="relative py-28 lg:py-40">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="max-w-3xl mb-20">
+      <p data-reveal class="reveal text-accent text-sm tracking-[0.2em] uppercase mb-6">Направления</p>
+      <h2 data-reveal class="reveal h-display text-3xl sm:text-5xl font-medium">Три зоны, где цена ошибки выше всего</h2>
+      <p data-reveal class="reveal mt-6 text-lg text-ash leading-relaxed">Каждое направление — это не консультация «по ситуации», а системное решение с прогнозируемым результатом.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <article data-reveal class="reveal group bg-coal border border-line rounded-3xl p-9 hover:border-accent/40 transition-all duration-500">
+        <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent mb-8">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-4 7 4v13M9 21v-6h6v6"/></svg>
+        </div>
+        <h3 class="h-display text-xl mb-4">Право РФ</h3>
+        <p class="text-ash text-sm leading-relaxed mb-6">Корпоративное сопровождение, договорная работа, споры и защита интересов компании.</p>
+        <ul class="space-y-3 text-sm text-sand/90">
+          <li class="flex gap-3"><span class="text-accent">—</span> Регистрация и структурирование бизнеса</li>
+          <li class="flex gap-3"><span class="text-accent">—</span> Договоры и риск-аудит сделок</li>
+          <li class="flex gap-3"><span class="text-accent">—</span> Досудебное и судебное урегулирование</li>
+        </ul>
+      </article>
+
+      <article data-reveal class="reveal group bg-coal border border-line rounded-3xl p-9 hover:border-accent/40 transition-all duration-500">
+        <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent mb-8">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+        </div>
+        <h3 class="h-display text-xl mb-4">Право Азии · Китай и Таиланд</h3>
+        <p class="text-ash text-sm leading-relaxed mb-6">Сопровождение выхода на азиатские рынки с учётом местного регулирования.</p>
+        <ul class="space-y-3 text-sm text-sand/90">
+          <li class="flex gap-3"><span class="text-accent">—</span> Контракты с китайскими поставщиками</li>
+          <li class="flex gap-3"><span class="text-accent">—</span> Регистрация компаний и активов в Азии</li>
+          <li class="flex gap-3"><span class="text-accent">—</span> Защита при трансграничных спорах</li>
+        </ul>
+      </article>
+
+      <article data-reveal class="reveal group bg-coal border border-line rounded-3xl p-9 hover:border-accent/40 transition-all duration-500">
+        <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent mb-8">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M4 7h16M4 7l3-3m13 3l-3-3M4 17h16M4 17l3 3m13-3l-3 3"/></svg>
+        </div>
+        <h3 class="h-display text-xl mb-4">Трансграничные платежи</h3>
+        <p class="text-ash text-sm leading-relaxed mb-6">Рабочие схемы расчётов в условиях ограничений — легально и прозрачно.</p>
+        <ul class="space-y-3 text-sm text-sand/90">
+          <li class="flex gap-3"><span class="text-accent">—</span> Платежи через третьи юрисдикции</li>
+          <li class="flex gap-3"><span class="text-accent">—</span> Валютный контроль и комплаенс</li>
+          <li class="flex gap-3"><span class="text-accent">—</span> Сопровождение ВЭД «под ключ»</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ КЕЙСЫ ░░ -->
+<section id="cases" class="relative bg-ink py-28 lg:py-40">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="max-w-3xl mb-16">
+      <p data-reveal class="reveal text-accent text-sm tracking-[0.2em] uppercase mb-6">Практика</p>
+      <h2 data-reveal class="reveal h-display text-3xl sm:text-5xl font-medium">Задачи, которые уже решены</h2>
+      <p data-reveal class="reveal mt-6 text-ash">Примеры обезличены в интересах конфиденциальности клиентов.</p>
+    </div>
+    <div class="rounded-3xl overflow-hidden border border-line divide-y divide-line">
+      <div data-reveal class="reveal grid lg:grid-cols-12 gap-4 items-start p-8 lg:p-10 bg-coal/40 hover:bg-coal transition-colors duration-500">
+        <div class="lg:col-span-2 h-display text-3xl text-accent">01</div>
+        <div class="lg:col-span-7">
+          <h3 class="h-display text-xl mb-3">Разблокировка платежа поставщику из Китая</h3>
+          <p class="text-ash text-sm leading-relaxed">Оплата «зависла» на комплаенсе банка. Перестроила маршрут расчётов через корректную юрисдикцию и подготовила пакет документов для прохождения проверки.</p>
+        </div>
+        <div class="lg:col-span-3 lg:text-right text-sm text-sand/80">Платёж прошёл<br>за 9 дней</div>
+      </div>
+      <div data-reveal class="reveal grid lg:grid-cols-12 gap-4 items-start p-8 lg:p-10 bg-coal/40 hover:bg-coal transition-colors duration-500">
+        <div class="lg:col-span-2 h-display text-3xl text-accent">02</div>
+        <div class="lg:col-span-7">
+          <h3 class="h-display text-xl mb-3">Запуск компании в Таиланде «под ключ»</h3>
+          <p class="text-ash text-sm leading-relaxed">Структура владения, локальные требования к учредителям, договоры с персоналом и аренда — сопровождение от регистрации до первого контракта.</p>
+        </div>
+        <div class="lg:col-span-3 lg:text-right text-sm text-sand/80">Бизнес запущен<br>без штрафов</div>
+      </div>
+      <div data-reveal class="reveal grid lg:grid-cols-12 gap-4 items-start p-8 lg:p-10 bg-coal/40 hover:bg-coal transition-colors duration-500">
+        <div class="lg:col-span-2 h-display text-3xl text-accent">03</div>
+        <div class="lg:col-span-7">
+          <h3 class="h-display text-xl mb-3">Спор по контракту с китайским заводом</h3>
+          <p class="text-ash text-sm leading-relaxed">Поставка не соответствовала спецификации. Досудебная претензия и переговоры на двух языках вернули средства клиенту без обращения в суд.</p>
+        </div>
+        <div class="lg:col-span-3 lg:text-right text-sm text-sand/80">Возврат<br>без суда</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ ОБО МНЕ ░░ -->
+<section id="about" class="relative py-28 lg:py-40">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 grid md:grid-cols-2 gap-14 lg:gap-20 items-center">
+    <div data-reveal class="reveal relative">
+      <div class="relative rounded-3xl overflow-hidden border border-line">
+        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1100&auto=format&fit=crop"
+             alt="Евгения Ларкина — юрист" loading="lazy"
+             class="w-full h-[520px] object-cover" style="filter:grayscale(.2) brightness(.92)" />
+        <div class="absolute inset-0" style="background:linear-gradient(180deg,transparent 55%,rgba(13,13,15,.85))"></div>
+      </div>
+      <div class="absolute -bottom-6 left-6 lg:left-10 bg-ink border border-accent/30 rounded-2xl px-6 py-4">
+        <div class="h-display text-xl text-sand">Е.&nbsp;А.&nbsp;Ларкина</div>
+        <div class="text-ash text-xs tracking-wide mt-1">юрист · трансграничная практика</div>
+      </div>
+    </div>
+    <div>
+      <p data-reveal class="reveal text-accent text-sm tracking-[0.2em] uppercase mb-6">Обо мне</p>
+      <h2 data-reveal class="reveal h-display text-3xl sm:text-5xl font-medium leading-tight mb-8">Я не продаю консультации — я закрываю риски</h2>
+      <p data-reveal class="reveal text-ash leading-relaxed mb-5">Помогаю предпринимателям работать на стыке российского и азиатского права — там, где одна ошибка в договоре или платеже стоит бизнесу миллионы. Говорю по делу, без юридического тумана.</p>
+      <p data-reveal class="reveal text-ash leading-relaxed mb-9">Вы получаете не папку бумаг, а спокойствие и возможность заниматься бизнесом, пока правовая сторона под контролем.</p>
+      <div data-reveal class="reveal flex flex-wrap gap-3">
+        <span class="text-xs text-sand border border-line rounded-full px-4 py-2">Контрактное право</span>
+        <span class="text-xs text-sand border border-line rounded-full px-4 py-2">ВЭД</span>
+        <span class="text-xs text-sand border border-line rounded-full px-4 py-2">Валютный контроль</span>
+        <span class="text-xs text-sand border border-line rounded-full px-4 py-2">Арбитраж</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ FAQ ░░ -->
+<section id="faq" class="relative bg-ink py-28 lg:py-40">
+  <div class="max-w-3xl mx-auto px-6 lg:px-10">
+    <p data-reveal class="reveal text-accent text-sm tracking-[0.2em] uppercase mb-6 text-center">Вопросы</p>
+    <h2 data-reveal class="reveal h-display text-3xl sm:text-5xl font-medium text-center mb-14">Часто спрашивают</h2>
+    <div class="divide-y divide-line border-y border-line">
+      <div data-reveal class="reveal">
+        <button data-faq class="w-full flex justify-between items-center gap-6 text-left py-6 text-lg text-sand">
+          Работаете ли вы удалённо и в других городах?
+          <span data-faq-ic class="text-accent text-2xl leading-none transition-transform duration-300">+</span>
+        </button>
+        <div data-faq-body class="overflow-hidden transition-all duration-500" style="max-height:0">
+          <p class="text-ash text-sm leading-relaxed pb-6">Да. Основная часть работы — дистанционно, с клиентами по всей России и за рубежом. Документы и встречи онлайн, при необходимости — очно.</p>
+        </div>
+      </div>
+      <div data-reveal class="reveal">
+        <button data-faq class="w-full flex justify-between items-center gap-6 text-left py-6 text-lg text-sand">
+          Сколько стоит работа?
+          <span data-faq-ic class="text-accent text-2xl leading-none transition-transform duration-300">+</span>
+        </button>
+        <div data-faq-body class="overflow-hidden transition-all duration-500" style="max-height:0">
+          <p class="text-ash text-sm leading-relaxed pb-6">Зависит от задачи. На первом разговоре определяем формат — разовая консультация, сопровождение сделки или абонентское обслуживание. Стоимость называю до начала работы, без скрытых доплат.</p>
+        </div>
+      </div>
+      <div data-reveal class="reveal">
+        <button data-faq class="w-full flex justify-between items-center gap-6 text-left py-6 text-lg text-sand">
+          Гарантируете ли результат?
+          <span data-faq-ic class="text-accent text-2xl leading-none transition-transform duration-300">+</span>
+        </button>
+        <div data-faq-body class="overflow-hidden transition-all duration-500" style="max-height:0">
+          <p class="text-ash text-sm leading-relaxed pb-6">Гарантирую профессиональный подход и честную оценку перспектив. Если дело бесперспективно — скажу сразу, а не возьму деньги за иллюзии.</p>
+        </div>
+      </div>
+      <div data-reveal class="reveal">
+        <button data-faq class="w-full flex justify-between items-center gap-6 text-left py-6 text-lg text-sand">
+          Как начать работу?
+          <span data-faq-ic class="text-accent text-2xl leading-none transition-transform duration-300">+</span>
+        </button>
+        <div data-faq-body class="overflow-hidden transition-all duration-500" style="max-height:0">
+          <p class="text-ash text-sm leading-relaxed pb-6">Оставьте заявку в форме ниже или напишите в Telegram. Я свяжусь, задам несколько уточняющих вопросов и предложу план.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ КОНТАКТ / ФОРМА ░░ -->
+<section id="contact" class="relative py-28 lg:py-40 overflow-hidden">
+  <div class="absolute inset-0 -z-10" style="background:radial-gradient(70% 55% at 50% 0%, rgba(196,168,106,.10), transparent 60%)"></div>
+  <div class="max-w-5xl mx-auto px-6 lg:px-10 grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+    <div>
+      <p data-reveal class="reveal text-accent text-sm tracking-[0.2em] uppercase mb-6">Контакт</p>
+      <h2 data-reveal class="reveal h-display text-3xl sm:text-5xl font-medium mb-7">Обсудим вашу задачу</h2>
+      <p data-reveal class="reveal text-ash leading-relaxed mb-9">Оставьте заявку — отвечу в течение рабочего дня. Первичная оценка ситуации — без обязательств.</p>
+      <a data-reveal href="https://t.me/Yurist55bot" target="_blank" rel="noopener"
+         class="reveal group flex items-center gap-4 bg-accent/10 border border-accent/40 rounded-2xl px-6 py-5 hover:bg-accent hover:text-ink transition-all text-sand">
+        <svg class="w-7 h-7 text-accent group-hover:text-ink transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M9.5 16.5l-.4 3.8c.6 0 .8-.2 1.1-.5l2.6-2.5 5.4 3.9c1 .6 1.7.3 2-1l3.6-16.9c.3-1.3-.5-1.9-1.4-1.5L1.2 9.6C-.1 10.1 0 10.9 1 11.2l5.5 1.7L19.4 5c.6-.4 1.2-.2.7.2z"/></svg>
+        <span><span class="block font-semibold">Написать в Telegram</span><span class="block text-sm opacity-70">@Yurist55bot — быстрый ответ</span></span>
+      </a>
+    </div>
+    <form id="leadform" data-reveal class="reveal space-y-4 bg-coal border border-line rounded-3xl p-8">
+      <div>
+        <label for="lf-name" class="block text-xs text-ash uppercase tracking-wide mb-2">Имя</label>
+        <input id="lf-name" name="name" required type="text" autocomplete="name"
+               class="w-full bg-ink/60 border border-line rounded-xl px-4 py-3 text-sand focus:border-accent/60 focus:outline-none transition-colors" placeholder="Как к вам обращаться" />
+      </div>
+      <div>
+        <label for="lf-contact" class="block text-xs text-ash uppercase tracking-wide mb-2">Контакт</label>
+        <input id="lf-contact" name="contact" required type="text"
+               class="w-full bg-ink/60 border border-line rounded-xl px-4 py-3 text-sand focus:border-accent/60 focus:outline-none transition-colors" placeholder="Телефон, email или Telegram" />
+      </div>
+      <div>
+        <label for="lf-task" class="block text-xs text-ash uppercase tracking-wide mb-2">Задача</label>
+        <textarea id="lf-task" name="task" rows="3"
+                  class="w-full bg-ink/60 border border-line rounded-xl px-4 py-3 text-sand focus:border-accent/60 focus:outline-none transition-colors resize-none" placeholder="Коротко о вашей ситуации"></textarea>
+      </div>
+      <button type="submit" class="w-full bg-accent text-ink font-semibold rounded-xl px-6 py-4 hover:bg-sand transition-colors">Отправить заявку</button>
+      <p data-ok class="hidden text-center text-accent text-sm">Текст заявки скопирован — откройте Telegram и вставьте сообщение. Отвечу в течение рабочего дня.</p>
+      <p class="text-ash/70 text-xs text-center">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ░░ ФУТЕР ░░ -->
+<footer class="relative border-t border-line py-14">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col md:flex-row gap-6 justify-between items-center">
+    <div class="text-center md:text-left">
+      <div class="h-display text-lg text-sand">Евгения Ларкина</div>
+      <div class="text-ash text-sm mt-1">Юрист · право РФ, Китай, Таиланд · трансграничные платежи</div>
+    </div>
+    <nav class="flex items-center gap-7 text-sm text-ash">
+      <a href="#services" class="hover:text-accent transition-colors">Услуги</a>
+      <a href="#contact" class="hover:text-accent transition-colors">Контакт</a>
+      <a href="https://t.me/Yurist55bot" target="_blank" rel="noopener" class="hover:text-accent transition-colors">Telegram</a>
+      <a href="#top" class="hover:text-accent transition-colors">Наверх</a>
+    </nav>
+  </div>
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 mt-10 pt-6 border-t border-line text-ash/60 text-xs text-center">
+    © <span id="year">2026</span> Е. А. Ларкина. Информация на сайте не является публичной офертой.
+  </div>
+</footer>
+
+<!-- ░░ СКРИПТЫ ░░ -->
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script>
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Lenis — инерционный скролл (только если не reduced-motion)
+  if (!reduce) {
+    const lenis = new Lenis({ duration: 1.1, easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)) });
+    function raf(time){ lenis.raf(time); requestAnimationFrame(raf); }
+    requestAnimationFrame(raf);
+    if (window.gsap && window.ScrollTrigger) {
+      lenis.on('scroll', ScrollTrigger.update);
+      gsap.ticker.add(t => lenis.raf(t * 1000));
+      gsap.ticker.lagSmoothing(0);
+    }
+  }
+
+  // nav фон при скролле
+  const nav = document.getElementById('nav');
+  const onScroll = () => {
+    const s = window.scrollY > 40;
+    nav.classList.toggle('bg-ink/80', s);
+    nav.classList.toggle('backdrop-blur-md', s);
+    nav.classList.toggle('hairline', s);
+  };
+  onScroll(); window.addEventListener('scroll', onScroll, { passive:true });
+
+  // Reveal-анимации — first-paint-safe (immediateRender:false => до триггера контент виден)
+  if (!reduce && window.gsap && window.ScrollTrigger) {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.utils.toArray('[data-reveal]').forEach((el) => {
+      gsap.from(el, {
+        immediateRender: false,
+        opacity: 0, y: 28, duration: 0.9, ease: 'power3.out',
+        scrollTrigger: { trigger: el, start: 'top 88%' }
+      });
+    });
+    // счётчики цифр
+    gsap.utils.toArray('[data-count]').forEach((el) => {
+      const end = parseFloat(el.dataset.count);
+      const obj = { v: 0 };
+      gsap.to(obj, {
+        v: end, duration: 1.6, ease: 'power2.out',
+        scrollTrigger: { trigger: el, start: 'top 90%' },
+        onUpdate: () => { el.textContent = (end % 1 ? obj.v.toFixed(1) : Math.round(obj.v)) + (el.dataset.suffix || ''); }
+      });
+    });
+  }
+
+  // FAQ-аккордеон
+  document.addEventListener('click', (e) => {
+    const q = e.target.closest('[data-faq]');
+    if (!q) return;
+    const item = q.parentElement;
+    const body = item.querySelector('[data-faq-body]');
+    const open = item.classList.toggle('faq-open');
+    body.style.maxHeight = open ? body.scrollHeight + 'px' : '0px';
+    q.querySelector('[data-faq-ic]')?.classList.toggle('rotate-45', open);
+  });
+
+  // актуальный год
+  const yEl = document.getElementById('year');
+  if (yEl) yEl.textContent = new Date().getFullYear();
+
+  // форма заявки: копия текста в буфер + переход в Telegram (серверного приёма нет)
+  const lf = document.getElementById('leadform');
+  if (lf) lf.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const v = sel => (lf.querySelector(sel)?.value || '').trim();
+    const txt = `Заявка с сайта\nИмя: ${v('#lf-name')}\nКонтакт: ${v('#lf-contact')}\nЗадача: ${v('#lf-task')}`;
+    try { await navigator.clipboard.writeText(txt); } catch (_) { /* буфер недоступен — просто откроем чат */ }
+    lf.querySelector('[data-ok]')?.classList.remove('hidden');
+    window.open('https://t.me/Yurist55bot', '_blank', 'noopener');
+  });
+</script>
+</body>
+</html>
