@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ООО «Металл-М» — скупка металла и трубы б/у оптом | Металл в дело</title>
+<meta name="description" content="Покупаем крупные партии труб, металлоконструкций, металлоизделий и металлолома у предприятий. Официальные документы, лицензия на лом, быстрый расчёт и вывоз." />
+<meta name="theme-color" content="#0b0c0e" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b0c0e'/%3E%3Ctext x='32' y='44' font-family='Arial' font-weight='bold' font-size='30' fill='%23f25c2a' text-anchor='middle'%3EМ%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: { extend: {
+      colors: {
+        ink:'#0b0c0e', coal:'#15171a', steel:'#1d2025', ash:'#8b929c',
+        fog:'#e8eaed', molten:'#f25c2a', ember:'#ff7a45',
+        line:'rgba(232,234,237,0.09)'
+      },
+      fontFamily: { display:['Oswald','sans-serif'], body:['Manrope','sans-serif'] }
+    } }
+  };
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<style>
+  html,body{background:#0b0c0e;color:#e8eaed;font-family:'Manrope',sans-serif}
+  ::selection{background:#f25c2a;color:#0b0c0e}
+  .disp{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.01em;line-height:.98}
+  .grain::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:60;opacity:.04;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+  .reveal{opacity:1}
+  .marquee{display:flex;gap:0;white-space:nowrap;animation:scroll 32s linear infinite}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+  .edge{background:linear-gradient(90deg,#0b0c0e 0%,transparent 8%,transparent 92%,#0b0c0e 100%)}
+  @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1!important;transform:none!important}.marquee{animation:none!important}}
+</style>
+</head>
+<body class="grain antialiased overflow-x-hidden">
+
+<!-- NAV -->
+<header id="nav" class="fixed top-0 inset-x-0 z-50 transition-all duration-500">
+  <div class="max-w-7xl mx-auto px-5 lg:px-10 h-[72px] flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-3">
+      <span class="w-9 h-9 rounded-md bg-molten text-ink disp font-bold text-lg grid place-items-center">М</span>
+      <span class="disp text-lg font-semibold tracking-wide">Металл-М</span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-8 text-sm text-ash">
+      <a href="#what" class="hover:text-fog transition">Что покупаем</a>
+      <a href="#why" class="hover:text-fog transition">Почему мы</a>
+      <a href="#pipe" class="hover:text-fog transition">Труба б/у</a>
+      <a href="#deal" class="hover:text-fog transition">Как проходит сделка</a>
+      <a href="#contact" class="hover:text-fog transition">Контакты</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="tel:+79136282833" class="hidden sm:block disp text-fog font-semibold tracking-wide">+7 913 628-28-33</a>
+      <a href="#contact" class="bg-molten hover:bg-ember text-ink font-semibold text-sm rounded-full px-5 py-2.5 transition">Получить расчёт</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="top" class="relative min-h-screen flex items-center">
+  <div class="absolute inset-0">
+    <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?q=80&w=2400&auto=format&fit=crop" alt="" class="w-full h-full object-cover opacity-50" />
+    <div class="absolute inset-0" style="background:linear-gradient(95deg,#0b0c0e 30%,rgba(11,12,14,.7) 60%,rgba(11,12,14,.35))"></div>
+    <div class="absolute inset-0" style="background:linear-gradient(180deg,transparent 55%,#0b0c0e)"></div>
+  </div>
+  <div class="relative max-w-7xl mx-auto px-5 lg:px-10 w-full pt-28 pb-24">
+    <p data-reveal class="reveal text-molten text-sm tracking-[0.25em] uppercase mb-6">ООО «Металл-М» · Металл в дело</p>
+    <h1 data-reveal class="reveal disp text-5xl sm:text-7xl lg:text-8xl font-700 font-bold max-w-4xl">Скупаем металл <span class="text-molten">б/у</span></h1>
+    <p data-reveal class="reveal mt-7 max-w-xl text-lg text-ash leading-relaxed">Покупаем крупные партии труб, металлоконструкций, металлоизделий и металлолома у предприятий и организаций. Оценка, документы и вывоз — на нас.</p>
+    <div data-reveal class="reveal mt-9 flex flex-col sm:flex-row gap-4">
+      <a href="#contact" class="group inline-flex items-center justify-center gap-2 bg-molten hover:bg-ember text-ink font-semibold rounded-full px-8 py-4 transition">
+        Предложить металл
+        <svg class="w-4 h-4 group-hover:translate-x-1 transition" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a href="#what" class="inline-flex items-center justify-center border border-line hover:border-fog rounded-full px-8 py-4 text-fog transition">Что покупаем</a>
+    </div>
+    <div data-reveal class="reveal mt-14 grid grid-cols-2 sm:grid-cols-4 gap-px bg-line rounded-2xl overflow-hidden max-w-3xl">
+      <div class="bg-ink/80 p-5"><div class="disp text-fog text-2xl">Крупные</div><p class="text-xs text-ash mt-1">партии и объёмы</p></div>
+      <div class="bg-ink/80 p-5"><div class="disp text-fog text-2xl">Документы</div><p class="text-xs text-ash mt-1">официально, по закону</p></div>
+      <div class="bg-ink/80 p-5"><div class="disp text-fog text-2xl">Расчёт</div><p class="text-xs text-ash mt-1">быстро и прозрачно</p></div>
+      <div class="bg-ink/80 p-5"><div class="disp text-molten text-2xl">Лицензия</div><p class="text-xs text-ash mt-1">на работу с ломом</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="relative py-5 border-y border-line bg-coal overflow-hidden edge">
+  <div class="marquee disp text-2xl text-steel/70">
+    <span class="flex">
+      <span class="px-7">Труба б/у</span><span class="text-molten">·</span><span class="px-7">Лом чёрных металлов</span><span class="text-molten">·</span><span class="px-7">Металлоконструкции</span><span class="text-molten">·</span><span class="px-7">Контейнеры</span><span class="text-molten">·</span><span class="px-7">Списанное оборудование</span><span class="text-molten">·</span><span class="px-7">Крупногабаритный металл</span><span class="text-molten">·</span>
+    </span>
+    <span class="flex" aria-hidden="true">
+      <span class="px-7">Труба б/у</span><span class="text-molten">·</span><span class="px-7">Лом чёрных металлов</span><span class="text-molten">·</span><span class="px-7">Металлоконструкции</span><span class="text-molten">·</span><span class="px-7">Контейнеры</span><span class="text-molten">·</span><span class="px-7">Списанное оборудование</span><span class="text-molten">·</span><span class="px-7">Крупногабаритный металл</span><span class="text-molten">·</span>
+    </span>
+  </div>
+</div>
+
+<!-- ЧТО ПОКУПАЕМ -->
+<section id="what" class="relative py-24 lg:py-32">
+  <div class="max-w-7xl mx-auto px-5 lg:px-10">
+    <div class="flex flex-wrap items-end justify-between gap-6 mb-14">
+      <div>
+        <p data-reveal class="reveal text-molten text-sm tracking-[0.2em] uppercase mb-4">Приём</p>
+        <h2 data-reveal class="reveal disp text-4xl lg:text-6xl font-bold">Что покупаем</h2>
+      </div>
+      <p data-reveal class="reveal text-ash max-w-md">Берём как разовые крупные партии, так и постоянные объёмы от производств, баз и подрядчиков.</p>
+    </div>
+    <div class="swiper whatSwiper">
+      <div class="swiper-wrapper">
+        <!-- карточки -->
+        <div class="swiper-slide"><div class="h-full bg-coal border border-line rounded-2xl p-7 hover:border-molten/50 transition"><div class="disp text-molten text-3xl mb-6">01</div><h3 class="disp text-xl mb-2">Труба б/у</h3><p class="text-sm text-ash leading-relaxed">НКТ, обсадная, профильная, водогазопроводная — любой диаметр и состояние.</p></div></div>
+        <div class="swiper-slide"><div class="h-full bg-coal border border-line rounded-2xl p-7 hover:border-molten/50 transition"><div class="disp text-molten text-3xl mb-6">02</div><h3 class="disp text-xl mb-2">Лом чёрных металлов</h3><p class="text-sm text-ash leading-relaxed">3А, 5А, габарит и негабарит, стружка. Взвешивание на месте.</p></div></div>
+        <div class="swiper-slide"><div class="h-full bg-coal border border-line rounded-2xl p-7 hover:border-molten/50 transition"><div class="disp text-molten text-3xl mb-6">03</div><h3 class="disp text-xl mb-2">Металлоконструкции</h3><p class="text-sm text-ash leading-relaxed">Балки, фермы, ангары, эстакады, резервуары под демонтаж.</p></div></div>
+        <div class="swiper-slide"><div class="h-full bg-coal border border-line rounded-2xl p-7 hover:border-molten/50 transition"><div class="disp text-molten text-3xl mb-6">04</div><h3 class="disp text-xl mb-2">Контейнеры</h3><p class="text-sm text-ash leading-relaxed">Морские и складские контейнеры, бытовки, тара — выкуп и вывоз.</p></div></div>
+        <div class="swiper-slide"><div class="h-full bg-coal border border-line rounded-2xl p-7 hover:border-molten/50 transition"><div class="disp text-molten text-3xl mb-6">05</div><h3 class="disp text-xl mb-2">Списанное оборудование</h3><p class="text-sm text-ash leading-relaxed">Станки, узлы, агрегаты и техника, выведенные из эксплуатации.</p></div></div>
+        <div class="swiper-slide"><div class="h-full bg-coal border border-line rounded-2xl p-7 hover:border-molten/50 transition"><div class="disp text-molten text-3xl mb-6">06</div><h3 class="disp text-xl mb-2">Крупногабаритный металл</h3><p class="text-sm text-ash leading-relaxed">Негабаритные изделия и конструкции — организуем резку и погрузку.</p></div></div>
+      </div>
+      <div class="swiper-pagination !static mt-8"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ПОЧЕМУ МЫ + цифры -->
+<section id="why" class="relative py-24 lg:py-32 bg-coal border-y border-line">
+  <div class="max-w-7xl mx-auto px-5 lg:px-10">
+    <div class="max-w-2xl mb-16">
+      <p data-reveal class="reveal text-molten text-sm tracking-[0.2em] uppercase mb-4">Почему с нами работают</p>
+      <h2 data-reveal class="reveal disp text-4xl lg:text-6xl font-bold">Понятная сделка без головной боли</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-line rounded-2xl overflow-hidden">
+      <div data-reveal class="reveal bg-ink p-8"><div class="disp text-5xl text-fog"><span data-count="15" data-suffix="+">15+</span></div><p class="mt-3 text-sm text-ash">лет на рынке лома и металлоизделий</p></div>
+      <div data-reveal class="reveal bg-ink p-8"><div class="disp text-5xl text-fog"><span data-count="24" data-suffix="ч">24ч</span></div><p class="mt-3 text-sm text-ash">расчёт стоимости после заявки</p></div>
+      <div data-reveal class="reveal bg-ink p-8"><div class="disp text-5xl text-fog"><span data-count="100" data-suffix="%">100%</span></div><p class="mt-3 text-sm text-ash">официальные документы и оплата</p></div>
+      <div data-reveal class="reveal bg-ink p-8"><div class="disp text-5xl text-molten">∞</div><p class="mt-3 text-sm text-ash">объём партий — без верхней границы</p></div>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6 mt-6">
+      <div data-reveal class="reveal bg-ink border border-line rounded-2xl p-7"><h3 class="disp text-xl mb-2 text-molten">Свой транспорт</h3><p class="text-sm text-ash leading-relaxed">Манипуляторы и тралы — вывозим сами, грузим на месте.</p></div>
+      <div data-reveal class="reveal bg-ink border border-line rounded-2xl p-7"><h3 class="disp text-xl mb-2 text-molten">Честный вес</h3><p class="text-sm text-ash leading-relaxed">Взвешивание при вас, прозрачная оценка по актуальным ценам.</p></div>
+      <div data-reveal class="reveal bg-ink border border-line rounded-2xl p-7"><h3 class="disp text-xl mb-2 text-molten">Работа с юрлицами</h3><p class="text-sm text-ash leading-relaxed">Договор, закрывающие документы, безнал — всё по закону.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ТРУБА Б/У -->
+<section id="pipe" class="relative py-24 lg:py-32">
+  <div class="max-w-7xl mx-auto px-5 lg:px-10 grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+    <div data-reveal class="reveal rounded-2xl overflow-hidden border border-line">
+      <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1200&auto=format&fit=crop" alt="Труба б/у" loading="lazy" class="w-full h-[440px] object-cover" style="filter:grayscale(.15) brightness(.85)" />
+    </div>
+    <div>
+      <p data-reveal class="reveal text-molten text-sm tracking-[0.2em] uppercase mb-4">Отдельное направление</p>
+      <h2 data-reveal class="reveal disp text-4xl lg:text-5xl font-bold mb-6">Покупаем и продаём трубу б/у</h2>
+      <p data-reveal class="reveal text-ash leading-relaxed mb-7">Восстановленная и техническая труба под сваи, заборы, дренаж и металлоконструкции. Берём вашу — предлагаем со склада свою.</p>
+      <ul class="space-y-3 text-sm text-fog/90">
+        <li data-reveal class="reveal flex gap-3"><span class="text-molten">—</span> НКТ 60–89 мм, обсадная 114–426 мм</li>
+        <li data-reveal class="reveal flex gap-3"><span class="text-molten">—</span> Профильная и водогазопроводная</li>
+        <li data-reveal class="reveal flex gap-3"><span class="text-molten">—</span> Резка в размер, погрузка и доставка</li>
+      </ul>
+      <a data-reveal href="#contact" class="reveal inline-flex mt-8 items-center gap-2 border border-molten/50 text-ember hover:bg-molten hover:text-ink rounded-full px-7 py-3.5 transition">Предложить трубу</a>
+    </div>
+  </div>
+</section>
+
+<!-- КАК ПРОХОДИТ СДЕЛКА -->
+<section id="deal" class="relative py-24 lg:py-32 bg-coal border-y border-line">
+  <div class="max-w-7xl mx-auto px-5 lg:px-10">
+    <div class="max-w-2xl mb-16">
+      <p data-reveal class="reveal text-molten text-sm tracking-[0.2em] uppercase mb-4">Процесс</p>
+      <h2 data-reveal class="reveal disp text-4xl lg:text-6xl font-bold">Как проходит сделка</h2>
+    </div>
+    <div class="grid md:grid-cols-4 gap-6">
+      <div data-reveal class="reveal relative bg-ink border border-line rounded-2xl p-7"><div class="disp text-6xl text-molten/25 absolute top-4 right-5">1</div><h3 class="disp text-lg mb-2 relative">Заявка</h3><p class="text-sm text-ash leading-relaxed relative">Опишите металл, объём и город. Фото — по желанию.</p></div>
+      <div data-reveal class="reveal relative bg-ink border border-line rounded-2xl p-7"><div class="disp text-6xl text-molten/25 absolute top-4 right-5">2</div><h3 class="disp text-lg mb-2 relative">Оценка и расчёт</h3><p class="text-sm text-ash leading-relaxed relative">Считаем стоимость по актуальным ценам, согласуем условия.</p></div>
+      <div data-reveal class="reveal relative bg-ink border border-line rounded-2xl p-7"><div class="disp text-6xl text-molten/25 absolute top-4 right-5">3</div><h3 class="disp text-lg mb-2 relative">Вывоз и документы</h3><p class="text-sm text-ash leading-relaxed relative">Приезжаем, грузим, взвешиваем при вас, оформляем документы.</p></div>
+      <div data-reveal class="reveal relative bg-ink border border-line rounded-2xl p-7"><div class="disp text-6xl text-molten/25 absolute top-4 right-5">4</div><h3 class="disp text-lg mb-2 relative">Оплата</h3><p class="text-sm text-ash leading-relaxed relative">Рассчитываемся наличными или на счёт — как удобно.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ФОРМА -->
+<section id="contact" class="relative py-24 lg:py-32 overflow-hidden">
+  <div class="absolute inset-0 -z-10" style="background:radial-gradient(70% 55% at 50% 0%,rgba(242,92,42,.12),transparent 60%)"></div>
+  <div class="max-w-5xl mx-auto px-5 lg:px-10 grid md:grid-cols-2 gap-12 items-start">
+    <div>
+      <p data-reveal class="reveal text-molten text-sm tracking-[0.2em] uppercase mb-4">Заявка</p>
+      <h2 data-reveal class="reveal disp text-4xl lg:text-5xl font-bold mb-6">Предложить металл / получить расчёт</h2>
+      <p data-reveal class="reveal text-ash leading-relaxed mb-8">Оставьте заявку — перезвоним и посчитаем стоимость в течение рабочего дня. Или свяжитесь напрямую:</p>
+      <div class="space-y-3">
+        <a data-reveal href="tel:+79136282833" class="reveal flex items-center gap-4 bg-coal border border-line rounded-2xl px-6 py-4 hover:border-molten/50 transition"><span class="text-molten">☏</span><span class="disp text-xl">+7 913 628-28-33</span></a>
+        <a data-reveal href="mailto:mtl-m@mail.ru" class="reveal flex items-center gap-4 bg-coal border border-line rounded-2xl px-6 py-4 hover:border-molten/50 transition"><span class="text-molten">✉</span><span>mtl-m@mail.ru</span></a>
+        <div data-reveal class="reveal flex items-center gap-4 bg-coal border border-line rounded-2xl px-6 py-4"><span class="text-molten">⚲</span><span class="text-ash">г. Омск · работаем по РФ · пн–сб</span></div>
+      </div>
+    </div>
+    <form id="leadform" data-reveal class="reveal space-y-3.5 bg-coal border border-line rounded-2xl p-7">
+      <div class="grid grid-cols-2 gap-3.5">
+        <input id="f-name" required type="text" placeholder="Имя*" class="bg-ink/70 border border-line rounded-lg px-4 py-3 text-fog placeholder-ash/70 focus:border-molten/60 focus:outline-none transition" />
+        <input id="f-phone" required type="tel" placeholder="Телефон*" class="bg-ink/70 border border-line rounded-lg px-4 py-3 text-fog placeholder-ash/70 focus:border-molten/60 focus:outline-none transition" />
+      </div>
+      <input id="f-city" type="text" placeholder="Город / адрес металла" class="w-full bg-ink/70 border border-line rounded-lg px-4 py-3 text-fog placeholder-ash/70 focus:border-molten/60 focus:outline-none transition" />
+      <input id="f-what" type="text" placeholder="Что хотите продать (труба, лом, конструкции…)" class="w-full bg-ink/70 border border-line rounded-lg px-4 py-3 text-fog placeholder-ash/70 focus:border-molten/60 focus:outline-none transition" />
+      <input id="f-vol" type="text" placeholder="Примерный объём (тонн)" class="w-full bg-ink/70 border border-line rounded-lg px-4 py-3 text-fog placeholder-ash/70 focus:border-molten/60 focus:outline-none transition" />
+      <textarea id="f-note" rows="2" placeholder="Комментарий" class="w-full bg-ink/70 border border-line rounded-lg px-4 py-3 text-fog placeholder-ash/70 focus:border-molten/60 focus:outline-none transition resize-none"></textarea>
+      <button type="submit" class="w-full bg-molten hover:bg-ember text-ink font-semibold rounded-lg px-6 py-4 transition">Отправить заявку</button>
+      <p data-ok class="hidden text-center text-ember text-sm">Заявка сформирована — откроется почтовая программа на mtl-m@mail.ru. Или позвоните: +7 913 628-28-33.</p>
+      <p class="text-ash/60 text-xs text-center">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ФУТЕР -->
+<footer class="relative border-t border-line py-12">
+  <div class="max-w-7xl mx-auto px-5 lg:px-10 grid md:grid-cols-3 gap-8">
+    <div>
+      <div class="flex items-center gap-3 mb-3"><span class="w-8 h-8 rounded-md bg-molten text-ink disp font-bold grid place-items-center">М</span><span class="disp text-lg">ООО «Металл-М»</span></div>
+      <p class="text-sm text-ash">Скупка металла и трубы б/у оптом. Металл в дело.</p>
+    </div>
+    <div class="text-sm text-ash space-y-1">
+      <div class="text-fog disp mb-2">Контакты</div>
+      <a href="tel:+79136282833" class="block hover:text-molten transition">+7 913 628-28-33</a>
+      <a href="mailto:mtl-m@mail.ru" class="block hover:text-molten transition">mtl-m@mail.ru</a>
+      <div>г. Омск · работаем по РФ</div>
+    </div>
+    <div class="text-sm text-ash space-y-1">
+      <div class="text-fog disp mb-2">Документы</div>
+      <div>Лицензия на работу с ломом</div>
+      <a href="#" class="block hover:text-molten transition">Политика конфиденциальности</a>
+      <div>Реквизиты — по запросу</div>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-5 lg:px-10 mt-10 pt-6 border-t border-line text-ash/60 text-xs">© <span id="year">2026</span> ООО «Металл-М». Концепт-редизайн.</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/ScrollTrigger.min.js"></script>
+<script>
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Swiper
+  new Swiper('.whatSwiper', {
+    slidesPerView: 1.1, spaceBetween: 16,
+    pagination: { el: '.whatSwiper .swiper-pagination', clickable: true },
+    breakpoints: { 640:{slidesPerView:2.2}, 1024:{slidesPerView:3}, 1280:{slidesPerView:3} }
+  });
+
+  // Lenis
+  if (!reduce && window.Lenis) {
+    const lenis = new Lenis({ duration: 1.05 });
+    function raf(t){ lenis.raf(t); requestAnimationFrame(raf); } requestAnimationFrame(raf);
+    if (window.ScrollTrigger) lenis.on('scroll', ScrollTrigger.update);
+  }
+
+  // nav фон
+  const nav = document.getElementById('nav');
+  const onScroll = () => { const s = scrollY > 40; nav.classList.toggle('bg-ink/85', s); nav.classList.toggle('backdrop-blur-md', s); nav.classList.toggle('border-b', s); nav.classList.toggle('border-line', s); };
+  onScroll(); addEventListener('scroll', onScroll, { passive:true });
+
+  // reveal (first-paint-safe) + счётчики
+  if (!reduce && window.gsap && window.ScrollTrigger) {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.utils.toArray('[data-reveal]').forEach(el => gsap.from(el, { immediateRender:false, opacity:0, y:26, duration:.8, ease:'power3.out', scrollTrigger:{ trigger:el, start:'top 88%' } }));
+    gsap.utils.toArray('[data-count]').forEach(el => {
+      const end = parseFloat(el.dataset.count), o = { v:0 };
+      gsap.to(o, { v:end, duration:1.6, ease:'power2.out', scrollTrigger:{ trigger:el, start:'top 90%' }, onUpdate:()=>{ el.textContent = Math.round(o.v) + (el.dataset.suffix||''); } });
+    });
+  }
+
+  // год
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // форма → mailto (серверного приёма нет)
+  const lf = document.getElementById('leadform');
+  lf.addEventListener('submit', e => {
+    e.preventDefault();
+    const v = id => (document.getElementById(id)?.value || '').trim();
+    const body = `Заявка с сайта Металл-М%0D%0AИмя: ${v('f-name')}%0D%0AТелефон: ${v('f-phone')}%0D%0AГород/адрес: ${v('f-city')}%0D%0AЧто продать: ${v('f-what')}%0D%0AОбъём: ${v('f-vol')}%0D%0AКомментарий: ${v('f-note')}`;
+    lf.querySelector('[data-ok]').classList.remove('hidden');
+    window.location.href = `mailto:mtl-m@mail.ru?subject=${encodeURIComponent('Заявка с сайта — приём металла')}&body=${body}`;
+  });
+</script>
+</body>
+</html>
