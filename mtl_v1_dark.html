@@ -236,9 +236,7 @@
   <div class="max-w-7xl mx-auto px-5 lg:px-10 mt-10 pt-6 border-t border-line text-ash/60 text-xs">© <span id="year">2026</span> ООО «Металл-М». Концепт-редизайн.</div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/ScrollTrigger.min.js"></script>
 <script>
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -250,12 +248,7 @@
     breakpoints: { 640:{slidesPerView:2.2}, 1024:{slidesPerView:3}, 1280:{slidesPerView:3} }
   });
 
-  // Lenis
-  if (!reduce && window.Lenis) {
-    const lenis = new Lenis({ duration: 1.05 });
-    function raf(t){ lenis.raf(t); requestAnimationFrame(raf); } requestAnimationFrame(raf);
-    if (window.ScrollTrigger) lenis.on('scroll', ScrollTrigger.update);
-  }
+  // нативный скролл (Lenis убран — тормозил колесо мыши)
 
   // nav фон
   const nav = document.getElementById('nav');
